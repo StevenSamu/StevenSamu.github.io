@@ -1,6 +1,5 @@
 body {
   margin: 16px;
-  font-family: sans-serif;
 }
 
 .home {
@@ -10,12 +9,11 @@ body {
   z-index: 1;
   display: inline-block;
   padding: 8px 16px;
-  text-decoration: none;
   cursor: pointer;
 }
 
 img {
   display: block;
-  width: min(100%, 420px);
+  width: min(100%, 250px);
   height: auto;
 }
