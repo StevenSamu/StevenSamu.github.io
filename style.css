@@ -1,12 +1,13 @@
 body {
   margin: 16px;
   font-family: Georgia, serif;
-  background-color: #EDEADE;
-  color: #424242;
+  background-color: #b8b591;
+  color: #434339;
   line-height: 1.6;
   max-width: 500px;
   margin: 0 auto;
   padding: 40px 20px;
+  text-decoration: none;
 }
 
 .home {
@@ -23,13 +24,12 @@ img {
   display: block;
   width: min(100%, 250px);
   height: auto;
-  background-color: rgb(255, 255, 255); 
-  border: 4px solid rgb(255, 255, 255); 
-  padding: min(1.5%,5px);
+  background-color: rgb(54, 51, 51); 
+  border: 2px solid rgb(54, 51, 51); 
+  padding: min(2px);
 }
 
 p {
     font-size: 1.05em;
-    color: #424242;
     margin-bottom: 15px;
 }
