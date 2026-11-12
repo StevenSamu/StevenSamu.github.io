@@ -92,6 +92,17 @@ p {
   transform: scale(1.025);
 }
 
+@media (max-width: 700px) {
+  .photo-gallery {
+    columns: 2 150px;
+    column-gap: 12px;
+  }
+
+  .photo-gallery figure {
+    margin-bottom: 12px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .photo-gallery img {
     transition: none;
