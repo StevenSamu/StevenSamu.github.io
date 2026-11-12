@@ -33,3 +33,67 @@ p {
     font-size: 1.05em;
     margin-bottom: 15px;
 }
+
+.photo-gallery-page {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1600px;
+  padding: 48px clamp(20px, 4vw, 64px) 72px;
+}
+
+.gallery-header {
+  margin: 0 0 32px;
+}
+
+.gallery-header h1 {
+  margin: 0 0 8px;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  line-height: 1.1;
+}
+
+.gallery-header p {
+  margin: 0;
+}
+
+.gallery-header .gallery-eyebrow {
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.photo-gallery {
+  columns: 4 240px;
+  column-gap: 18px;
+}
+
+.photo-gallery figure {
+  break-inside: avoid;
+  margin: 0 0 18px;
+  overflow: hidden;
+  background-color: rgb(54, 51, 51);
+}
+
+.photo-gallery img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  padding: 0;
+  border: 0;
+  transition: transform 250ms ease;
+}
+
+.photo-gallery figure:hover img {
+  transform: scale(1.025);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photo-gallery img {
+    transition: none;
+  }
+}
