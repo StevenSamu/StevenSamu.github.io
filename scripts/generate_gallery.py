@@ -151,7 +151,7 @@ def main() -> None:
         alt = escape(args.featured_alt, quote=True) if index == 0 and args.featured_alt else (
             f"{escape(gallery_name)} photograph {description}"
         )
-        if index == 0 and args.featured:
+        if index == 0:
             figures.append(
                 f'            <figure><img src="{filename}" alt="{alt}" '
                 'fetchpriority="high"></figure>'
